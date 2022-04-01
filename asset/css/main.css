@@ -20,6 +20,10 @@
     min-height: 26px;
 }
 
+.header__navbar-item--has-qr:hover .header__qr {
+    display: block;
+}
+
 .header__navbar-item,
 .header__navbar-link {
     display: inline-block;
@@ -72,4 +76,126 @@
 .header__navbar-title--no-pointer{
     cursor: text;
     color: var(--white-color);
+}
+/* QR code */
+.header__qr{
+    width: 180px;
+    background-color: var(--white-color);
+    position: absolute;
+    left: 0;
+    top: 100%;
+    padding: 8px;
+    border-radius: 2px;
+    display: none;
+    animation: FaceIn ease-in .5s;
+}
+
+.header__qr::before{
+    position: absolute;
+    left: 0;
+    top: -16px;
+    width: 100%;
+    height: 23px;
+    content: "";
+    display: block;
+}
+
+.header__qr-img{
+    width: 100%;
+}
+
+.header__qr-app{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__qr-link:nth-child(1){
+    margin-left: 17px;
+}
+
+.header__qr-link:nth-child(2){
+    margin-right: 17px;
+}
+
+
+.header__pr-download-img{
+    height: 13px;
+}
+/* header thông báo */
+
+.header__notify {
+    position: absolute;
+    top: 118%;
+    right: 0;
+    width: 404px;
+    border: 1px solid #D3D3D3;
+    background-color: var(--white-color);
+}
+.header__notify-header{
+    height: 40px;
+    background-color: var(--white-color);
+}
+
+.header__notify-header h3{
+    color: #999;
+    margin: 0 0 0 12px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 40px;
+}
+
+.header__notify-list{
+    padding-left: 0;
+}
+
+.header__notify-item{
+    display: flex;
+}
+
+.header__notify-item:hover {
+    background-color: #f7f7f7;
+}
+
+.header__notify-item--viewed{
+    background-color: rgba(238, 75, 43, 0.08); 
+}   
+
+.header__notify-link{
+    display: flex;
+    width: 100%;
+    padding: 12px; 
+    text-decoration: none; 
+}
+
+.header__notify-img{
+    width: 48px;
+    object-fit: contain;
+}
+
+.header__notify-info{
+    margin-left: 12px;
+}
+
+.header__notify-name{
+    display: block;
+    font-size: 1.4rem;
+    color: var(--black-color);
+    font-weight: 400;
+}
+
+.header__notify-desc{
+    display: block;
+    font-size: 1.2rem;
+    color: #756f6e ;
+    line-height: 1.6rem;
+}
+
+.header__notify-footer{
+    text-align: center;
+}
+.header__notify-footer-btn{
+    text-decoration: none;
+    color: #000;
+    font-weight: 400;
+    padding: 4px 16px;
 }
