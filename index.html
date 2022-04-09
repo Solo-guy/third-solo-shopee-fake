@@ -122,6 +122,7 @@
                         </svg>
                     </div>
 
+                    <!-- Search button -->
                     <div class="header__search">
                         <div class="header__search-input-wrap">
                             <input type="text" class="header__search-input" placeholder="Nhập để tìm kiếm">
@@ -163,8 +164,87 @@
                             <i class="header__search-btn-search-icon fa-solid fa-magnifying-glass"></i>
                         </button>
                     </div>
+
+                    <!-- cart buttom -->
                     <div class="header__cart">
-                        <i class="header__cart-icon fa-solid fa-cart-shopping"></i>
+                        <div class="header__cart-wrap">
+                            <i class="header__cart-icon fa-solid fa-cart-shopping"></i>
+                            <span class="header__cart-notice">
+                                3
+                            </span>
+                            <!-- No cart: header__cart-list--no-cart -->
+                            <div class="header__cart-list">
+                                <img src="./asset/img/no-cart.png" alt="Ảnh cart" class="header__cart--no-cart-img">
+                                <span class="header__cart-list-no-cart-msg">
+                                    Chưa có sản phẩm
+                                </span>
+
+                                <h4 class="header__cart-heading">
+                                    Sản phẩm đã thêm
+                                </h4>
+                                <ul class="header__cart-list-item">
+                                    <!-- cart list item -->
+                                    <li class="header__cart-item">
+                                        <img src="./asset/img/img-cart-item.jpg" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Bộ kem đặc trị mắt</h5>
+                                              <div class="header__cart-item-price-wrap">
+                                                <span class="header__cart-item-price">2.000.000đ</span>
+                                                <span class="header__cart-item-multiply">X</span>
+                                                <span class="header__cart-item-qnt">2</span>
+                                              </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-desc">Phân loại: Bạc</span>
+                                                <span class="header__cart-item-remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="header__cart-item">
+                                        <img src="./asset/img/img-cart-item1.jpg" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Bộ kem đặc trị mũi</h5>
+                                              <div class="header__cart-item-price-wrap">
+                                                <span class="header__cart-item-price">2.500.000đ</span>
+                                                <span class="header__cart-item-multiply">X</span>
+                                                <span class="header__cart-item-qnt">2</span>
+                                              </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-desc">Phân loại: Bạc</span>
+                                                <span class="header__cart-item-remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="header__cart-item">
+                                        <img src="./asset/img/img-cart-item2.jpg" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Bộ kem đặc trị mặt</h5>
+                                              <div class="header__cart-item-price-wrap">
+                                                <span class="header__cart-item-price">1.800.000đ</span>
+                                                <span class="header__cart-item-multiply">X</span>
+                                                <span class="header__cart-item-qnt">2</span>
+                                              </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-desc">Phân loại: Bạc</span>
+                                                <span class="header__cart-item-remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                                <a href="#" class="header__cart-view-cart btn btn--primary">
+                                    Xem giỏ hàng
+                                </a>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
