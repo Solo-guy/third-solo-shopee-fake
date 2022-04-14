@@ -4,7 +4,7 @@
     --black-color: #000;
     --text-color: #333;
     --border-color: #dbdbdb;
-
+    --gold-fill: #ffce3e;
     --header-height: 120px;
     --navbar-height: 34px;
     --header-with-search-height: calc(var(--header-height) - var(--navbar-height));
@@ -144,6 +144,7 @@ html{
 
 /* Selection */
 .select-input{
+    z-index: 1;
     position: relative;
     min-width: 200px;
     height: 32px;
@@ -153,10 +154,13 @@ html{
     display: flex;
     align-items: center;
     justify-content: space-between;
+
 }
 
 .select-input:hover .select-input__list{
     display: block;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5); 
+
 }
 
 .select-input__label{
