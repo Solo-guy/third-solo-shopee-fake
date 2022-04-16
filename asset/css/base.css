@@ -1,5 +1,6 @@
 :root {
     --primary-color: #ee4d2d;
+    --primary-hover: #ee6e54;
     --white-color: #fff;
     --black-color: #000;
     --text-color: #333;
@@ -207,4 +208,41 @@ html{
 
 .select-input__link:hover{
     color: var(--primary-color);
+}
+
+/* pagination */
+
+.pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    
+}
+
+.pagination-item{
+    margin: 0 7px;
+}
+
+.pagination-item--active .pagination-item__link{
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
+.pagination-item--active .pagination-item__link:hover{
+    background-color: var(--primary-hover);
+}
+
+.pagination-item__link{
+    --height: 30px; 
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.9rem;
+    font-weight: 300;
+    color: var(--text-color);
+    min-width: 40px;
+    height: var(--height);
+    line-height: var(--height);
+    border-radius: 2px;
 }
