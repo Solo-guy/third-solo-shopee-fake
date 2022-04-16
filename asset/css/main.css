@@ -1274,13 +1274,34 @@ i.home-product-item__like-icon-fill{
     margin-top: 30px;
 }
 
-.footer__bottom-desc{
-    text-align: center;
+.footer__bottom-policy{
+    display: flex;
+    flex: 1;
     justify-content: center;
 }
+
+.footer__bottom-desc{
+    padding: 45px 25px 20px;    
+}
+
+.footer__bottom-but-link{
+    padding: 4px 7px;
+    position: relative;
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.footer__bottom-but-link::after{
+    position: absolute;
+    top: 1px;
+    height: 14px;
+    right: -25px;
+    content: "";
+    border: 1px solid var(--border-color);
+}
+
 .footer__bottom-contact{
-    display: block;
-    margin: 0;
     font-size: 1.4rem;
     text-align: center;
     color: #737373;
