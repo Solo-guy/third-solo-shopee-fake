@@ -484,13 +484,28 @@
     align-items: center;
 }
 
+.header__mobile-search{
+    padding: 0 15px;
+}
+
+.header__mobile-search-icon{
+    font-size: 2.6rem;
+    color: var(--white-color);
+}
+
 .header__logo{
     width: 200px;
 }
 
 .header__logo-link{
+    display: block;
     text-decoration: none;
     color: transparent;
+    line-height: 0;
+}
+
+.header__search-checkbox:checked ~ .header__search{
+    display: flex;
 }
 
 .header__logo-img{
@@ -556,7 +571,7 @@
     padding-left: 0;
     list-style: none;
     /* view port height */
-    height: 45vh;  
+    max-height: 45vh;  
     overflow-y: auto;
 }
 
@@ -867,6 +882,57 @@
     color: var(--text-color);
     display: block;
 }
+
+/* Header sort bar*/
+
+.header__sort-bar{
+    position: fixed;
+    top:var(--header-height);
+    left: 0;
+    right: 0;
+    height: var(--header-sort-bar-height);
+    background-color: var(--white-color);
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    display: none;
+}
+
+.header__sort-item{
+    flex: 1;
+}
+
+.header__sort-item:first-child .header__sort-link::before{
+    display: none;
+}
+
+.header__sort-link{
+    display: block;
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.4rem;
+    line-height: var(--header-sort-bar-height);
+    height: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.header__sort-item--active .header__sort-link{
+    color: var(--primary-color);
+}
+
+.header__sort-link::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 60%;
+    border-left: 1px solid #e5e5e5;
+    transform: translateY(-50%);
+}
+
 
 /* Container */
 .app__container{
@@ -1284,14 +1350,8 @@ i.home-product-item__like-icon-fill{
     padding: 45px 10px 20px;    
 }
 
-.footer__bottom-desc::after{
-    content: "";
-    padding-right: 25px;
-    border-right: 1px solid var(--border-color);
-}
-
-.footer__bottom-desc:last-child{
-
+.footer__bottom-desc:first-child .footer__bottom-but-link::before{
+    display: none;
 }
 
 .footer__bottom-but-link{
@@ -1300,6 +1360,16 @@ i.home-product-item__like-icon-fill{
     font-size: 1.4rem;
     text-decoration: none;
     color: var(--text-color);
+}
+
+.footer__bottom-but-link::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -9px;
+    height: 60%;
+    border-left: 1px solid #e5e5e5;
+    transform: translateY(-50%);
 }
 
 .footer__bottom-contact{
