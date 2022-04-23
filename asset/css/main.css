@@ -1414,22 +1414,28 @@ i.home-product-item__like-icon-fill{
 }
 
 .footer__bottom-desc{
+    display: flex;
     padding: 45px 10px 20px;    
+    list-style: none;
 }
 
-.footer__bottom-desc:first-child .footer__bottom-but-link::before{
+/* .footer__bottom-desc:first-child .footer__bottom-link::before{
     display: none;
-}
+} */
 
-.footer__bottom-but-link{
-    padding: 4px 7px;
+.footer__bottom-link{
+    padding: 4px 16px;
     position: relative;
     font-size: 1.4rem;
     text-decoration: none;
     color: var(--text-color);
 }
 
-.footer__bottom-but-link::before{
+.footer__bottom-desc:first-child .footer__bottom-link::before{
+    display: none;
+}
+
+.footer__bottom-link::before{
     content: "";
     position: absolute;
     top: 50%;
@@ -1468,7 +1474,8 @@ i.home-product-item__like-icon-fill{
 }
 
 .footer__bottom-img{
-    margin-left: 84px;
+    margin: 0 32px;
+    justify-content: space-between;
     color: var(--white-color);
     display: block;
     width: 140px;
